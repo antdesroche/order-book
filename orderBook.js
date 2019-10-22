@@ -1,10 +1,7 @@
 function reconcileOrder(existingBook, incomingOrder) {
-
-  var matchingOrders = existingBook.filter( (currentItem) => {
-  }) 
-  if (existingBook.push(incomingOrder) !== true){
-
-  }
+  
+  existingBook.push(incomingOrder)
+  
  const totalOrders = existingBook.concat([incomingOrder])
  let btcOrder = totalOrders[0]
  let btcOrder2 = totalOrders[1]
@@ -31,7 +28,6 @@ function reconcileOrder(existingBook, incomingOrder) {
         }]
     }
   }
- 
-return existingBook
+ return existingBook
 }
 module.exports = reconcileOrder
